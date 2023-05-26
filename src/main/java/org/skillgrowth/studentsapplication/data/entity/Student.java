@@ -21,8 +21,6 @@ public class Student
 
     private String email;
 
-    private String address;
-
     @Column( name = "birth_date" )
     private Date birthDate;
 
@@ -42,6 +40,6 @@ public class Student
     public String toString()
     {
         return "Student{" + "id=" + id + ", name='" + name + '\'' + ", email='" + email + '\''
-                + ", address='" + address + '\'' + ", birthDate=" + birthDate + '}';
+                + '\'' + ", birthDate=" + birthDate + '}';
     }
 }
