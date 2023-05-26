@@ -9,10 +9,14 @@
 ## Part 1: Project Set-up
 1. Download the project and import it as a Maven project into your IDE.
 2. Verify the connection properties in the *application.properties* file.
+   a. You will need to verify that you have a database called sys on your local MySQL or change the url
+   b. You will need to add a new user to your MySQL server using the workbench
+   c. Make sure this user has DBA permissions
+   d. Update the user info in application.properties
 3. Run the application and verify that the sample data is created from the Web Application.
 
 ## Part 2: Implementing a REST API CRUD
-1. Create a new package called *controller*.
+1. Create a new package in the studentsapplication package called *controller*.
 2. Create a new class called *StudentsController*.
 3. Annotate the *StudentsController* with the *@RestController*.
 4. Inject the *StudentService* into the *StudentsController* via the constructor:
